@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let namSinh=+prompt("Nhập vào năm sinh ")
+    function tinhTuoi(namSinh) {
+        const namhientai=2021
+        let tuoi=namhientai-namSinh
+        if(namSinh>namhientai){
+            alert("Không hợp lệ")
+        }else {
+            alert("Tuổi của bạn là "+tuoi)
+        }
+    }
+    tinhTuoi(namSinh)
+</script>
+
+</body>
+</html>

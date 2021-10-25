@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+Enter a number <input type="number" id="a1"><input type="button" value="show" onclick="ham()">
+
+<script>
+    function ham() {
+        let SL = document.getElementById("a1").value
+        let count = 0
+        let number = 2
+        while (count < SL) {
+            let check = true
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    check = false
+                    break
+                }
+            }
+            if (check) {
+                document.write(+number + ",")
+                count++
+            }
+            number++
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>
